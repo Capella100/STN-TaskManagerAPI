@@ -2,7 +2,7 @@
 // require mongoose
 const mongoose = require('mongoose');
 
-// creating connect db function
+// creating connectdb function
 const connectDB = (url) => {
     return mongoose.connect(url, {
         autoIndex: false, // Don't build indexes
