@@ -2,6 +2,7 @@
 const Task = require('../models/Task');
 const { createCustomError } = require('../errors/custom-error')
 
+
 const getAllTasks = async (req, res) => {
     try {
         const tasks = await Task.find({});
