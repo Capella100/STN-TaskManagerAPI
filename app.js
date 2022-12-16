@@ -7,7 +7,7 @@ const notFound = require('./middleware/not-found');
 const tasks = require('./routes/task')
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
-const swaggerDocumenttion = require('./swagger/documentations')
+const swaggerDocumentaion = require('./swagger/documentations')
 
 
 // const { connect, connection } = require('mongoose');
@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json())
 
 app.use('/documentations', swaggerUI.serve);
-app.use('/documentations', swaggerUI.setup(swaggerDocumenttion));
+app.use('/documentations', swaggerUI.setup(swaggerDocumentaion));
 
 
 // routes
